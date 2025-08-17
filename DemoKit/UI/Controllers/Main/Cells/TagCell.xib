@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23727" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23721"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="mUg-Df-UJf" customClass="TagCell" customModule="DemoKit" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="40" height="15"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="SoX-M6-isc">
+                <rect key="frame" x="0.0" y="0.0" width="40" height="15"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="w82-d4-Mfq">
+                        <rect key="frame" x="0.0" y="0.0" width="40" height="15"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vpr-uN-0WU">
+                                <rect key="frame" x="0.0" y="1.666666666666667" width="30" height="12"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KML-cu-fCG">
+                                <rect key="frame" x="33" y="5.666666666666667" width="4" height="4.0000000000000009"/>
+                                <color key="backgroundColor" name="999999"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="4" id="8gj-9w-UdW"/>
+                                    <constraint firstAttribute="height" constant="4" id="OOg-6S-Ako"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="KML-cu-fCG" firstAttribute="centerY" secondItem="w82-d4-Mfq" secondAttribute="centerY" id="BfV-dW-jmd"/>
+                            <constraint firstItem="KML-cu-fCG" firstAttribute="leading" secondItem="Vpr-uN-0WU" secondAttribute="trailing" constant="3" id="J7c-qU-zTh"/>
+                            <constraint firstItem="Vpr-uN-0WU" firstAttribute="leading" secondItem="w82-d4-Mfq" secondAttribute="leading" id="NY3-QX-KZc"/>
+                            <constraint firstAttribute="trailing" secondItem="KML-cu-fCG" secondAttribute="trailing" constant="3" id="Pze-tM-9as"/>
+                            <constraint firstItem="Vpr-uN-0WU" firstAttribute="centerY" secondItem="w82-d4-Mfq" secondAttribute="centerY" id="jPO-Sk-jfT"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="w82-d4-Mfq" firstAttribute="leading" secondItem="SoX-M6-isc" secondAttribute="leading" id="BkL-2g-Oxq"/>
+                    <constraint firstAttribute="trailing" secondItem="w82-d4-Mfq" secondAttribute="trailing" id="VSx-5x-775"/>
+                    <constraint firstAttribute="bottom" secondItem="w82-d4-Mfq" secondAttribute="bottom" id="VeK-Zq-d7e"/>
+                    <constraint firstItem="w82-d4-Mfq" firstAttribute="top" secondItem="SoX-M6-isc" secondAttribute="top" id="WfY-wF-hqb"/>
+                </constraints>
+            </collectionViewCellContentView>
+            <size key="customSize" width="40" height="50"/>
+            <connections>
+                <outlet property="circleView" destination="KML-cu-fCG" id="4se-Xr-i3t"/>
+                <outlet property="titleLabel" destination="Vpr-uN-0WU" id="fBQ-rb-Y4H"/>
+            </connections>
+            <point key="canvasLocation" x="93.129770992366403" y="19.366197183098592"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <namedColor name="999999">
+            <color red="0.60000002384185791" green="0.60000002384185791" blue="0.60000002384185791" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

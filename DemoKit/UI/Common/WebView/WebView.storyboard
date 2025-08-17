@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23727" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23721"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Web Popup View Controller-->
+        <scene sceneID="y2B-oN-YEJ">
+            <objects>
+                <viewController storyboardIdentifier="WebPopupViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="FYQ-8L-CRd" customClass="WebPopupViewController" customModule="DemoKit" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="SU5-K0-Ql2">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Niz-6C-zmA">
+                                <rect key="frame" x="0.0" y="96" width="414" height="732"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eHA-Ry-Bm0" userLabel="headerView">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qfl-up-rjB">
+                                                <rect key="frame" x="364" y="0.0" width="50" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="qfl-up-rjB" secondAttribute="height" multiplier="1:1" id="DwL-x9-ejl"/>
+                                                </constraints>
+                                                <inset key="imageEdgeInsets" minX="15" minY="15" maxX="15" maxY="15"/>
+                                                <state key="normal" image="icon_close_black"/>
+                                                <connections>
+                                                    <action selector="btnPopupCloseTouched:" destination="FYQ-8L-CRd" eventType="touchUpInside" id="yER-7r-1oM"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="qfl-up-rjB" secondAttribute="bottom" id="Jeb-PL-kIk"/>
+                                            <constraint firstItem="qfl-up-rjB" firstAttribute="top" secondItem="eHA-Ry-Bm0" secondAttribute="top" id="OYK-SZ-9vD"/>
+                                            <constraint firstItem="qfl-up-rjB" firstAttribute="centerY" secondItem="eHA-Ry-Bm0" secondAttribute="centerY" id="P02-9J-o22"/>
+                                            <constraint firstAttribute="trailing" secondItem="qfl-up-rjB" secondAttribute="trailing" id="oYB-Ya-Cak"/>
+                                            <constraint firstAttribute="height" constant="50" id="zwy-0L-8hN"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EBh-Cz-o1b">
+                                        <rect key="frame" x="0.0" y="50" width="414" height="682"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="EBh-Cz-o1b" firstAttribute="top" secondItem="eHA-Ry-Bm0" secondAttribute="bottom" id="4FS-HB-NS3"/>
+                                    <constraint firstItem="EBh-Cz-o1b" firstAttribute="leading" secondItem="Niz-6C-zmA" secondAttribute="leading" id="DlU-0C-WIx"/>
+                                    <constraint firstAttribute="bottom" secondItem="EBh-Cz-o1b" secondAttribute="bottom" id="Oyt-Kx-O7F"/>
+                                    <constraint firstItem="eHA-Ry-Bm0" firstAttribute="leading" secondItem="Niz-6C-zmA" secondAttribute="leading" id="UOU-Bt-Fec"/>
+                                    <constraint firstAttribute="trailing" secondItem="EBh-Cz-o1b" secondAttribute="trailing" id="UoN-RI-fcR"/>
+                                    <constraint firstItem="eHA-Ry-Bm0" firstAttribute="top" secondItem="Niz-6C-zmA" secondAttribute="top" id="e43-bp-L96"/>
+                                    <constraint firstAttribute="trailing" secondItem="eHA-Ry-Bm0" secondAttribute="trailing" id="mYM-xo-aPO"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="rev-Eg-4PE"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Niz-6C-zmA" firstAttribute="top" secondItem="rev-Eg-4PE" secondAttribute="top" id="3ME-Dq-XRX"/>
+                            <constraint firstItem="Niz-6C-zmA" firstAttribute="leading" secondItem="rev-Eg-4PE" secondAttribute="leading" id="Cpy-TT-94G"/>
+                            <constraint firstAttribute="trailing" secondItem="Niz-6C-zmA" secondAttribute="trailing" id="YHP-EH-ldm"/>
+                            <constraint firstItem="rev-Eg-4PE" firstAttribute="bottom" secondItem="Niz-6C-zmA" secondAttribute="bottom" id="ZGd-fb-7ao"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="popupWebviewContainer" destination="EBh-Cz-o1b" id="wDG-GX-BSQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ysE-g8-psM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1897.1014492753625" y="68.973214285714278"/>
+        </scene>
+        <!--Web View Controller-->
+        <scene sceneID="xQt-ek-saz">
+            <objects>
+                <viewController storyboardIdentifier="WebViewController" id="RQI-0y-htg" customClass="WebViewController" customModule="DemoKit" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ub6-Op-O0L">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="alI-H6-FHl">
+                                <rect key="frame" x="0.0" y="96" width="414" height="732"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ne2-gS-M0N"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="alI-H6-FHl" firstAttribute="top" secondItem="ne2-gS-M0N" secondAttribute="top" id="87j-nL-CcK"/>
+                            <constraint firstItem="alI-H6-FHl" firstAttribute="trailing" secondItem="ne2-gS-M0N" secondAttribute="trailing" id="Dra-wA-BwD"/>
+                            <constraint firstItem="alI-H6-FHl" firstAttribute="leading" secondItem="ne2-gS-M0N" secondAttribute="leading" id="Mzn-1n-uD5"/>
+                            <constraint firstItem="alI-H6-FHl" firstAttribute="bottom" secondItem="ne2-gS-M0N" secondAttribute="bottom" id="SFU-GR-JdW"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="2UT-Rk-y3g"/>
+                    <connections>
+                        <outlet property="webviewContainer" destination="alI-H6-FHl" id="ypx-2w-5dG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UyR-Uh-4Nd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1047.8260869565217" y="68.973214285714278"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="icon_close_black" width="44" height="44"/>
+    </resources>
+</document>
